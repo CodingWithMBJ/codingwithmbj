@@ -1,0 +1,114 @@
+@keyframes menuOpenH {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  40% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  80% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+}
+
+@keyframes menuCloseH {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  40% {
+    transform: translateY(0) rotate(0deg);
+  }
+  80% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+}
+
+@keyframes menuOpenL {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  40% {
+    transform: translateY(0) rotate(0deg);
+  }
+  80% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+
+@keyframes menuCloseL {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  40% {
+    transform: translateY(0) rotate(0deg);
+  }
+  80% {
+    transform: translateY(10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(5px) rotate(0deg);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes themeRight {
+  0% {
+    transform: translateX(-50vw);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-25vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menuLeft {
+  0% {
+    transform: translateX(50vw);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(25vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,10 @@
+@media screen and (width >= 769px) {
+  #wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+  }
+}

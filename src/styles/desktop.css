@@ -1,0 +1,14 @@
+@media screen and (width >= 1024px) {
+  #wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+  }
+  .span-text {
+    display: unset;
+    animation: dropDown 0.5s ease-in-out;
+  }
+}
