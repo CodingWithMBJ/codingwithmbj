@@ -7,6 +7,11 @@ import "./styles/tablet.css";
 import Header from "./components/Header";
 import useTheme from "./hooks/useTheme";
 import { useBreakpoint } from "./hooks/useBreakPoint";
+import Hero from "./components/Hero";
+import NavBar from "./components/NavBar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+// import ThemeBtn from "./components/ThemeBtn";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,6 +31,13 @@ function App() {
         handleToggle={handleToggle}
         showMenu={showMenu}
       />
+      <Hero isDesktop={isDesktop} />
+      <main className="main">
+        <Routes>
+          <Route path={`/`} element={<Home />} />
+        </Routes>
+        <NavBar isDesktop={isDesktop} />
+      </main>
     </div>
   );
 }

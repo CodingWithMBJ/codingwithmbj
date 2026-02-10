@@ -1,15 +1,18 @@
 import React from "react";
 import Logo from "./Logo";
 import MenuBtn from "./MenuBtn";
-import ThemeBtn from "./ThemeBtn";
 import NavBar from "./NavBar";
+import ThemeBtn from "./ThemeBtn";
 
-function Header({ darkTheme, toggleTheme, showMenu, handleToggle }) {
+function Header({ showMenu, handleToggle, isDesktop, darkTheme, toggleTheme }) {
   return (
     <header className="header">
-      <MenuBtn showMenu={showMenu} handleToggle={handleToggle} />
       <Logo />
-      <NavBar showMenu={showMenu} />
+      {!isDesktop && <NavBar showMenu={showMenu} isDesktop={isDesktop} />}
+
+      {!isDesktop && (
+        <MenuBtn showMenu={showMenu} handleToggle={handleToggle} />
+      )}
       <ThemeBtn darkTheme={darkTheme} toggleTheme={toggleTheme} />
     </header>
   );
