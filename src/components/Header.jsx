@@ -1,19 +1,16 @@
 import React from "react";
 import Logo from "./Logo";
-import MenuBtn from "./MenuBtn";
-import NavBar from "./NavBar";
-import ThemeBtn from "./ThemeBtn";
+import ActionNav from "./ActionNav";
 
-function Header({ showMenu, handleToggle, isDesktop, darkTheme, toggleTheme }) {
+function Header({ darkTheme, toggleTheme, onScroll, isDesktop }) {
+  const headerStyle = onScroll ? "show scrolling" : "hidden";
+
   return (
-    <header className="header">
-      <Logo />
-      {!isDesktop && <NavBar showMenu={showMenu} isDesktop={isDesktop} />}
-
-      {!isDesktop && (
-        <MenuBtn showMenu={showMenu} handleToggle={handleToggle} />
+    <header className={`header ${headerStyle}`}>
+      <Logo onScroll={onScroll} />
+      {isDesktop && (
+        <ActionNav toggleTheme={toggleTheme} darkTheme={darkTheme} />
       )}
-      <ThemeBtn darkTheme={darkTheme} toggleTheme={toggleTheme} />
     </header>
   );
 }

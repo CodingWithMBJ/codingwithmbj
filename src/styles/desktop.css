@@ -1,47 +1,10 @@
 @media screen and (width >= 1024px) {
-  #wrapper {
+  /* #wrapper {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header"
       "nav"
       "content"
       "footer";
-  }
-
-  .header {
-    overflow: hidden;
-    background-color: var(--bg-primary);
-  }
-
-  .logo-link {
-    flex-direction: unset;
-    gap: 7px;
-  }
-
-  .span-icon {
-    animation: logoDesktop 0.8s ease-in-out;
-  }
-  .span-text {
-    display: unset;
-    animation: slideRight 2s ease-in-out;
-  }
-
-  .nav {
-    all: unset;
-    animation: navSlide 2s ease-in-out;
-  }
-  .nav-ul {
-    all: unset;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .nav-li-a {
-    color: var(--text-primary);
-  }
-
-  .theme-btn {
-    animation: themeDesktop 2s ease-in-out;
-  }
+  } */
 }
